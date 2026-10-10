@@ -131,7 +131,7 @@ class mbaaContext(CommonContext):
         loc_candidates = []
         loc_result = None
         for loc in scouts:
-            if (loc.flags & 0b011):
+            if (loc.flags & 0b010):
                 loc_candidates.append(loc)
         if len(loc_candidates):
             loc_result = random.choice(loc_candidates)
